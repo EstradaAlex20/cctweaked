@@ -1,0 +1,16 @@
+local c = peripheral.find("geoScanner")
+local n = 16
+local t = c.scan(n)
+--print(c.cost(n))
+--print(c.getFuelLevel())
+if(c.cost(n) > c.getFuelLevel())
+    then error(c.cost(n)) end
+table.foreach(t,function(k,v)
+    --print(v["name"])
+    if(v["name"]=="minecraft:ancient_debris")
+    then
+        table.foreach(v,function(a,b)
+            print(a,b)
+            end)
+    end
+end)
