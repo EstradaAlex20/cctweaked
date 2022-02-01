@@ -4,14 +4,14 @@ fs.makeDir("/usr")
 fs.makeDir("/usr/apis")
  
 local filesToUpdate = {
-    ["/reactorController.lua"] = "b17hfTqe",
-    ["/usr/apis/touchpoint.lua"] = "nx9pkLbJ",
+    ["/reactorController.lua"] = "https://raw.githubusercontent.com/EstradaAlex20/cctweaked/main/3rd",
+    ["/usr/apis/touchpoint.lua"] = "https://raw.githubusercontent.com/EstradaAlex20/cctweaked/main/4th",
 }
 -- Table for files/pastebin codes
  
 function getFile(fileName, link)
   
-  local file = http.get("http://pastebin.com/raw.php?i=" .. textutils.urlEncode(link))
+  local file = http.get(link)
   
   if file then
     
