@@ -4,8 +4,8 @@ fs.makeDir("/usr")
 fs.makeDir("/usr/apis")
  
 local filesToUpdate = {
-    ["/reactorController.lua"] = "https://raw.githubusercontent.com/EstradaAlex20/cctweaked/main/3rd",
-    ["/usr/apis/touchpoint.lua"] = "https://raw.githubusercontent.com/EstradaAlex20/cctweaked/main/4th",
+    ["/reactorController.lua"] = "https://raw.githubusercontent.com/EstradaAlex20/cctweaked/main/4th",
+    ["/usr/apis/touchpoint.lua"] = "https://raw.githubusercontent.com/EstradaAlex20/cctweaked/main/3rd",
 }
 -- Table for files/pastebin codes
  
